@@ -13,7 +13,7 @@ public class HealthInternalRoute extends RouteBuilder {
 
     static final Logger logger = LoggerFactory.getLogger(HealthInternalRoute.class);
 
-    @Value("${server.port}")
+    @Value("${management.server.port}")
     private String port;
 
     @Override

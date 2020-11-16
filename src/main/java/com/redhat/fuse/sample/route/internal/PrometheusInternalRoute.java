@@ -13,7 +13,7 @@ public class PrometheusInternalRoute extends RouteBuilder {
 
     static final Logger logger = LoggerFactory.getLogger(PrometheusInternalRoute.class);
 
-    @Value("${server.port}")
+    @Value("${prometheus.port}")
     private String port;
 
     @Override
