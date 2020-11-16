@@ -39,8 +39,6 @@ management:
   server:
     port: 8081
     address: 0.0.0.0
-    ssl:
-      client-auth: none
   endpoints:
     web:
       exposure:
