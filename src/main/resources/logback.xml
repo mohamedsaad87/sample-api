@@ -14,8 +14,8 @@
     </root>
 
     <!--
-    <logger name="br.gov.bnb.openbanking.admin" level="INFO"/>
-    <logger name="br.gov.bnb.openbanking.admin.configuration" level="INFO"/>
+    <logger name="com.redhat.fuse.example" level="INFO"/>
+    <logger name="com.redhat.fuse.example.configuration" level="TRACE"/>
     -->
 
 </configuration>

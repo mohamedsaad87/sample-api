@@ -10,8 +10,8 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>openbanking-admin-api</name>
-    <description>Banco do Nordeste - OpenBanking admin API</description>
+    <name>sample-api</name>
+    <description>Sample API</description>
 
     <properties>
         <java.version>1.8</java.version>

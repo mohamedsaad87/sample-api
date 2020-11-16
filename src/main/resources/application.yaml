@@ -3,15 +3,15 @@
 # ---------------------------------------------
 spring:
   application:
-    name: ${OPENSHIFT_APP_NAME:openbanking-admin-api}
+    name: ${OPENSHIFT_APP_NAME:sample-api}
   datasource:
     initialization-mode: never
 
 api:
-  title: ${OPENSHIFT_APP_NAME:openbanking-admin-api}
-  description: Banco do Nordeste - openbanking-admin-api
+  title: ${OPENSHIFT_APP_NAME:sample-api}
+  description: Sample API
   version: 1
-  hostname: ${OPENSHIFT_HOST_NAME:openbanking-admin-api.apps.openshift.com}
+  hostname: ${OPENSHIFT_HOST_NAME:sample-api.apps.openshift.com}
 
 logging:
   config: classpath:logback.xml
@@ -21,7 +21,7 @@ logging:
 # options from org.apache.camel.spring.boot.CamelConfigurationProperties can be configured here
 camel:
   springboot:
-    name: ${OPENSHIFT_APP_NAME:openbanking-admin-api}
+    name: ${OPENSHIFT_APP_NAME:sample-api}
     main-run-controller: true
   component:
     servlet:
@@ -60,7 +60,7 @@ management:
 opentracing:
   jaeger:
     enabled: true
-    service-name: ${OPENSHIFT_APP_NAME:openbanking-admin-api}
+    service-name: ${OPENSHIFT_APP_NAME:sample-api}
     enable-b3-propagation: true
     log-spans: true
     const-sampler:
@@ -78,13 +78,12 @@ opentracing:
       max-queue-size: 10000
       flush-interval: 1000
     tags:
-      - openbanking
-      - admin
+      - sample
 
 # =============================================
 # prometheus api parameters
 # ---------------------------------------------
 prometheus:
-  host: ${OPENSHIFT_PROMETHEUS_API_URL:"prometheus.microservices-openbanking.svc.cluster.local"}
+  host: ${OPENSHIFT_PROMETHEUS_API_URL:"prometheus.microservices.svc.cluster.local"}
   port: 8080
-  status-path: ${OPENSHIFT_PROMETHEUS_STATUS_URL:prometheus.microservices-openbanking.svc.cluster.local:8080/health}
+  status-path: ${OPENSHIFT_PROMETHEUS_STATUS_URL:prometheus.microservices.svc.cluster.local:8080/health}

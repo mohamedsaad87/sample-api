@@ -7,5 +7,5 @@ data:
   OPENSHIFT_HOST_NAME: sample-api.api.apps.microservices.com
   OPENSHIFT_JAEGER_HOST: jaeger-agent.microservices.svc
   OPENSHIFT_JAEGER_TRACE_API_URL: http://localhost:14268/api/traces
-  OPENSHIFT_PROMETHEUS_API_URL: prometheus.microservices-openbanking.svc.cluster.local
-  OPENSHIFT_PROMETHEUS_STATUS_URL: prometheus.microservices-openbanking.svc.cluster.local:8080/health
+  OPENSHIFT_PROMETHEUS_API_URL: prometheus.microservices.svc.cluster.local
+  OPENSHIFT_PROMETHEUS_STATUS_URL: prometheus.microservices.svc.cluster.local:8080/health
