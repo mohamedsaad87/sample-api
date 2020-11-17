@@ -57,28 +57,28 @@ management:
 # opentracing configurations
 # see: https://github.com/opentracing-contrib/java-spring-jaeger/blob/master/README.md
 # ---------------------------------------------
-opentracing:
-  jaeger:
-    enabled: true
-    service-name: ${OPENSHIFT_APP_NAME:sample-api}
-    enable-b3-propagation: true
-    log-spans: true
-    const-sampler:
-      decision: true
-    udp-sender:
-      host: ${OPENSHIFT_JAEGER_HOST:localhost}
-      port: 6831
-    http-sender:
-      #url: http://jaeger-collector:14268/api/traces
-      url: ${OPENSHIFT_JAEGER_TRACE_API_URL:http://localhost:14268/api/traces}
-      # password:
-      # username:
-    expand-exception-logs: true
-    remote-reporter:
-      max-queue-size: 10000
-      flush-interval: 1000
-    tags:
-      - sample
+#opentracing:
+#  jaeger:
+#    enabled: true
+#    service-name: ${OPENSHIFT_APP_NAME:sample-api}
+#    enable-b3-propagation: true
+#    log-spans: true
+#    const-sampler:
+#      decision: true
+#    udp-sender:
+#      host: ${OPENSHIFT_JAEGER_HOST:localhost}
+#      port: 6831
+#    http-sender:
+#      #url: http://jaeger-collector:14268/api/traces
+#      url: ${OPENSHIFT_JAEGER_TRACE_API_URL:http://localhost:14268/api/traces}
+#      # password:
+#      # username:
+#    expand-exception-logs: true
+#    remote-reporter:
+#      max-queue-size: 10000
+#      flush-interval: 1000
+#    tags:
+#      - sample
 
 # =============================================
 # prometheus api parameters
