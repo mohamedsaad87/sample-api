@@ -281,7 +281,7 @@
           <plugin>
             <groupId>org.jboss.redhat-fuse</groupId>
             <artifactId>openshift-maven-plugin</artifactId>
-            <version>${fuse.version}</version>
+            <version>${fuse.bom.version}</version>
             <executions>
               <execution>
                 <goals>
