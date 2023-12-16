@@ -18,7 +18,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <!-- -->
-        <fuse.bom.version>7.11.1.fuse-sb2-7_11_1-00017-redhat-00002</fuse.bom.version>
+        <fuse.bom.version>7.7.0.fuse-sb2-770010-redhat-00001</fuse.bom.version>
         <version.springboot>2.1.6.RELEASE</version.springboot>
         <!-- opentracing -->
         <version.opentracing.spring.cloud.starter>0.5.9</version.opentracing.spring.cloud.starter>
