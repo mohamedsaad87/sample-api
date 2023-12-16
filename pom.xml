@@ -14,7 +14,7 @@
     <description>Sample API</description>
 
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>1.11</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <!-- -->
@@ -30,8 +30,8 @@
         <!-- -->
         <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
         <maven.min.version>3.5.4</maven.min.version>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.11</maven.compiler.source>
+        <maven.compiler.target>1.11</maven.compiler.target>
         <!-- -->
         <nexusReleaseRepoUrl></nexusReleaseRepoUrl>
         <nexusSnapshotRepoUrl></nexusSnapshotRepoUrl>
