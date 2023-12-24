@@ -117,18 +117,6 @@
             <url>https://maven.repository.redhat.com/earlyaccess/all/</url>
         </pluginRepository>
     </pluginRepositories>
-
-    <distributionManagement>
-        <repository>
-            <id>nexus-releases</id>
-            <url>${nexusReleaseRepoUrl}</url>
-        </repository>
-        <snapshotRepository>
-            <id>nexus-snapshots</id>
-            <url>${nexusSnapshotRepoUrl}</url>
-        </snapshotRepository>
-    </distributionManagement>
-
     <dependencyManagement>
         <dependencies>
             <dependency>
