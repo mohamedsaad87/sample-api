@@ -47,6 +47,36 @@
     </licenses>
 
     <repositories>
+                <repository>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <id>central</id>
+      <name>Maven Repository Switchboard</name>
+      <url>http://repo1.maven.org/maven2</url>
+    </repository>
+             <repository>
+    <id>org.springframework.maven.release</id>
+    <name>Spring Maven Release Repository</name>
+    <url>http://repo.springsource.org/libs-release-local</url>
+    <releases><enabled>true</enabled></releases>
+    <snapshots><enabled>false</enabled></snapshots>
+</repository>
+<!-- For testing against latest Spring snapshots -->
+<repository>
+    <id>org.springframework.maven.snapshot</id>
+    <name>Spring Maven Snapshot Repository</name>
+    <url>http://repo.springsource.org/libs-snapshot-local</url>
+    <releases><enabled>false</enabled></releases>
+    <snapshots><enabled>true</enabled></snapshots>
+</repository>
+<!-- For developing against latest Spring milestones -->
+<repository>
+    <id>org.springframework.maven.milestone</id>
+    <name>Spring Maven Milestone Repository</name>
+    <url>http://repo.springsource.org/libs-milestone-local</url>
+    <snapshots><enabled>false</enabled></snapshots>
+</repository>
         <!-- maven central repository -->
         <!-- do not use this in production, use your own maven repository -->
         <repository>
